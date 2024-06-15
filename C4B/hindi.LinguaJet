@@ -1,0 +1,34 @@
+varg KaryakramPrathamank {
+
+    sarvajanik sthir reekt mukhya(String[] args) {
+        purnank shuru;
+        purnank ant;
+        purnank sankhyaPrathamank;
+        purnank sankhya;
+        purnank vibhajk;
+        purnank sankhyaVibhajk;
+
+        shuru = 2;
+        ant = 100;
+        sankhyaPrathamank = 0;
+        sankhya = shuru;
+
+        jab tak (sankhya <= ant) {
+            vibhajk = 2;
+            sankhyaVibhajk = 0;
+
+            jab tak (vibhajk <= sankhya) {
+                yadi (sankhya / vibhajk * vibhajk == sankhya) {
+                    sankhyaVibhajk = sankhyaVibhajk + 1;
+                }
+                vibhajk = vibhajk + 1;
+            }
+           
+            yadi (sankhyaVibhajk == 1) {
+                sankhyaPrathamank = sankhyaPrathamank + 1;
+            }
+
+            sankhya = sankhya + 1;
+        }
+    }
+}

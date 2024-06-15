@@ -1,0 +1,34 @@
+classe ProgrammeNombresPremiers {
+
+    public statique vide principal(String[] args) {
+        entier debut;
+        entier fin;
+        entier nombrePremiers;
+        entier num;
+        entier diviseur;
+        entier compteDiviseurs;
+
+        debut = 2;
+        fin = 100;
+        nombrePremiers = 0;
+        num = debut;
+
+        tant_que (num <= fin) {
+            diviseur = 2;
+            compteDiviseurs = 0;
+
+            tant_que (diviseur <= num) {
+                si (num / diviseur * diviseur == num) {
+                    compteDiviseurs = compteDiviseurs + 1;
+                }
+                diviseur = diviseur + 1;
+            }
+           
+            si (compteDiviseurs == 1) {
+                nombrePremiers = nombrePremiers + 1;
+            }
+
+            num = num + 1;
+        }
+    }
+}

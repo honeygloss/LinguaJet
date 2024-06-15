@@ -1,0 +1,34 @@
+kelas ProgramBilanganPrima {
+
+    publik statik kosong utama(String[] args) {
+        bilangan mulai;
+        bilangan akhir;
+        bilangan jumlahPrima;
+        bilangan num;
+        bilangan pembagi;
+        bilangan jumlahPembagi;
+
+        mulai = 2;
+        akhir = 100;
+        jumlahPrima = 0;
+        num = mulai;
+
+        selama (num <= akhir) {
+            pembagi = 2;
+            jumlahPembagi = 0;
+
+            selama (pembagi <= num) {
+                jika (num / pembagi * pembagi == num) {
+                    jumlahPembagi = jumlahPembagi + 1;
+                }
+                pembagi = pembagi + 1;
+            }
+           
+            jika (jumlahPembagi == 1) {
+                jumlahPrima = jumlahPrima + 1;
+            }
+
+            num = num + 1;
+        }
+    }
+}
